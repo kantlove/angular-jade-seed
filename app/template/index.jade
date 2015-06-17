@@ -1,0 +1,46 @@
+doctype html
+html(lang="en", ng-app="myApp")
+    head
+        meta(charset="utf-8")
+        //- Set the viewport width to device width for mobile
+        meta(name="viewport", content="width=device-width")
+
+        title Angular-Jade-PureCss
+
+        //- Bootstrap CSS
+        link(rel="stylesheet", href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css")
+
+        //- Application CSS
+        link(rel="stylesheet", href="/app/stylesheets/css/main.css")
+
+    body
+        div.row
+            div.col-md-2
+            div#main-content.col-md-8
+                h1(title-directive)
+                div(ng-controller="IndexCtrl")
+                    blockquote(ng-bind="message")
+
+                div(ng-controller="OtherCtrl")
+                    | Sum = 
+                    span(ng-bind="sum")
+
+                a.btn.btn-success(href="#", role="button") Click here
+            div.col-md-2
+
+        //- JQuery
+        script( src="//code.jquery.com/jquery-1.11.3.min.js" )
+        
+        //- Bootstrap script
+        script( src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js" )
+
+        //- Angular core
+        script( src="/node_modules/angular/angular.js" )
+        script( src="/node_modules/angular-route/angular-route.js" ) 
+        script( src="/node_modules/angular-resource/angular-resource.js")
+
+        //- Angular app files
+        script( src="/app/js/controllers.js" )
+        script( src="/app/js/services.js" )
+        script( src="/app/js/directives.js" )
+        script( src="/app/js/app.js" )

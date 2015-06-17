@@ -1,0 +1,16 @@
+html, body {
+	background-color: $background-color;
+	height: 100%
+}
+
+h1 {
+    color: $gray-color;
+}
+
+#main-content {
+	background-color: white;
+	height: 100%;
+	border-radius: 5px;
+	margin: 10px 0px;
+	padding: 5px;
+}

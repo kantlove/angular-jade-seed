@@ -1,0 +1,13 @@
+html, body {
+  background-color: #ecf0f1;
+  height: 100%; }
+
+h1 {
+  color: gray; }
+
+#main-content {
+  background-color: white;
+  height: 100%;
+  border-radius: 5px;
+  margin: 10px 0px;
+  padding: 5px; }
